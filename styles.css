@@ -1,0 +1,551 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #181818;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-color: white;
+    padding: 0.3%;
+    border-radius: 10%;
+    margin-left: 1%;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+}
+
+.logo:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+}
+
+.tap {
+    display: flex;
+    gap: 20px;
+    margin-right: 2%;
+}
+
+.click {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+    font-family: verdana;
+}
+
+.click:hover {
+    color: rgb(145, 143, 143);
+}
+
+section {
+    height: 100vh;
+}
+
+.one {
+    background-image: url('https://wallpapers.com/images/hd/dark-laptop-mountaintop-view-c5xvh55o47yp0axu.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    padding: 2%;
+    gap: 10%;
+}
+
+.gwapo {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.gwapo:hover {
+    opacity: 1;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.name text {
+    padding: 1%;
+    transition: 0.5s;
+}
+
+.name text:hover {
+    color: blue;
+}
+
+.greet {
+    font-size: 150%;
+    color: white;
+    font-family: verdana;
+}
+
+.greet button {
+    padding: 3%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: large;
+    transition: 0.3s;
+}
+
+.greet button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.socmed {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.socmed span {
+    font-size: small;
+    padding-right: 2%;
+}
+
+.socmed a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+.socmed img {
+    width: 10%;
+    margin-right: 2%;
+}
+
+.socmed-hover {
+    margin-left: 1%;
+    transition: 0.5s;
+}
+
+.socmed-hover:hover {
+    transform: scale(1.2);
+}
+
+.explore button {
+    background: none;
+    border: white solid 1px;
+    width: 25%;
+    padding: 3%;
+    margin: 1%;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+    border-radius: 30px;
+}
+
+.explore button:hover {
+    color: black;
+    background-color: white;
+}
+
+.two {
+    background-image: url('https://4kwallpapers.com/images/wallpapers/desert-doom-sand-dunes-dark-background-monochrome-landscape-1920x1080-6409.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 2%;
+    background-color: #1d1d1d;
+}
+
+.aboutme {
+    color: white;
+    font-family: verdana;
+}
+
+.about img {
+    width: 250px;
+    height: 250px;
+    padding: 0.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    object-fit: cover;
+    transition: 0.9s;
+    background-color: yellow;
+}
+
+.about img:hover {
+    transform: scale(1.1);
+    border-radius: 5%;
+}
+
+.myname {
+    font-size: 200%;
+    color: white;
+    font-family: verdana;
+}
+
+.frontend {
+    color: blue;
+    font-size: 150%;
+}
+
+.introduction {
+    padding: 3%;
+    color: white;
+}
+
+.introduce {
+    padding: 1%;
+}
+
+.more button {
+    border: solid 1px;
+    padding: 2%;
+    width: 25%;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.more button:hover {
+    background-color: white;
+    color: black;
+}
+
+.three {
+    background-image: url('https://wallpapers.com/images/featured/dark-city-7ws46k7xo1gcptjo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.more-about {
+    text-align: center;
+    color: white;
+}
+
+.all {
+    display: flex;
+}
+
+.container {
+    position: relative;
+    background-color: rgb(12, 12, 12);
+    height: 350px;
+    width: 450px;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 5%;
+    color: white;
+    opacity: 0.3;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container:hover {
+    opacity: 1;
+    box-shadow: 0 0 5px 3px white;
+}
+
+
+.container button{
+    position: absolute;
+    bottom: 30px;           /* space from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    border: solid white 1px;
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 30px;
+    
+
+}
+
+.container button:hover{
+    background-color: white;
+    color:black;
+
+}
+
+
+.guhit {
+    background-color: blue;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.HTML {
+    width: 95%;
+    background-color: yellow;
+    padding: 1%;
+    color: black;
+    border-radius: 30px;
+}
+
+.CSS {
+    width: 70%;
+    background-color: yellow;
+    padding: 1%;
+    color: black;
+    border-radius: 30px;
+}
+
+.javascript {
+    width: 5%;
+    background-color: yellow;
+    padding: 1%;
+    color: black;
+    border-radius: 30px;
+}
+
+.container .certificate {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    font-size: large;
+    background-color: white;
+    padding: 2%;
+    border-radius: 2%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container .certificate:hover {
+    opacity: 1;
+}
+
+.container .cert {
+    width: 10%;
+}
+
+.picture-edit {
+    width: 85%;
+    background-color: yellow;
+    padding: 1%;
+    color: black;
+    border-radius: 30px;
+}
+
+.video-edit {
+    width: 95%;
+    background-color: yellow;
+    padding: 1%;
+    color: black;
+    border-radius: 30px;
+}
+
+.digi-art {
+    width: 85%;
+    background-color: yellow;
+    padding: 1%;
+    color: black;
+    border-radius: 30px;
+}
+
+.trad-art {
+    width: 95%;
+    background-color: yellow;
+    padding: 1%;
+    color: black;
+    border-radius: 30px;
+}
+
+.color {
+    width: 45%;
+    background-color: yellow;
+    padding: 1%;
+    color: black;
+    border-radius: 30px;
+}
+
+.four{
+    background-image: url('https://scontent.fmnl9-6.fna.fbcdn.net/v/t39.30808-6/484088781_1854478521976762_8752497464737896504_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeEJl0H7_GC8lixY4qoUED872Z83Y9mX-27Znzdj2Zf7brI78eV2xL9jNggcwerCPytbF1ftLjsp4eqiOnzaT4_W&_nc_ohc=ZbSUYeD-LjAQ7kNvwFnNhNN&_nc_oc=AdlXpHzDMmXw5ZvzlpPlXEv6lAJWT_BdE1N58Mg0zr0FOtJKPFj-GrvLEf2UTKe5wrU&_nc_zt=23&_nc_ht=scontent.fmnl9-6.fna&_nc_gid=-P-49jVksaW7yYmEfw39JA&oh=00_AfasGKpLOIyVW5j4u05ky4Ws5PulZUxz92Q5xadyxqnbew&oe=68BDC051');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.contact-me{
+    padding:2% 10%;
+    border-radius: 30px;
+    
+}
+
+.pop{
+    padding:2%;
+    border: 1px white;
+    border-radius: 30px;
+    width:30%;
+    height: 50%;
+
+    
+}
+
+.contacts{
+    
+}
+
+
+.tawag img{
+    width:5%;
+    margin:3%;
+}
+
+.pop a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+/* ---------------------------------- */
+/* RESPONSIVE STYLES (Mobile-First) */
+/* ---------------------------------- */
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 0;
+        position: static;
+    }
+
+    .nav .logo {
+        margin-left: 0;
+    }
+
+    .nav .tap {
+        margin-top: 10px;
+        margin-right: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav .click {
+        padding: 5px 10px;
+    }
+
+    section {
+        height: auto;
+        padding: 5% 2%;
+    }
+
+    .one {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .gwapo {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .greet {
+        font-size: 100%;
+        text-align: center;
+    }
+
+    .greet .name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .greet button {
+        padding: 5%;
+        font-size: small;
+    }
+
+    .socmed {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .socmed a {
+        margin: 5px 0;
+    }
+
+    .explore button {
+        width: 50%;
+        padding: 5%;
+    }
+
+    .two {
+        padding: 5%;
+        height: auto;
+    }
+
+    .about img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .myname {
+        font-size: 150%;
+    }
+
+    .frontend {
+        font-size: 100%;
+    }
+
+    .more button {
+        width: 50%;
+        padding: 3%;
+    }
+
+    .three {
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+    }
+
+    .all {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 90%;
+        margin: 2% auto;
+        height: auto;
+        padding: 5%;
+        opacity: 1; /* Keep containers visible on mobile */
+    }
+}
